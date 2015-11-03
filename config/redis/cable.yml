@@ -5,3 +5,6 @@ development: &development
   :timeout: 1
   :inline: true
 test: *development
+production: &production
+  :url: ENV["REDISTOGO_URL"]
+  :timeout: 1
