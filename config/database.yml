@@ -14,6 +14,6 @@ test:
 production:
   <<: *default
   url: <%= ENV["DATABASE_URL"] %>
-  database: actioncablechat_production
-  username: actioncablechat
+  database: d9h6irhokfube2
+  username: sxhvorhzcrkuxl
   password: <%= ENV['ACTIONCABLECHAT_DATABASE_PASSWORD'] %>
