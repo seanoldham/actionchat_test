@@ -10,4 +10,4 @@ class ChatActionCable
       @app.call(env)
     end
   end
-end  
+end
