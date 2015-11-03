@@ -29,6 +29,8 @@ gem 'pry-rails'
 gem 'sprockets', '>=3.0.0.beta'
 gem 'sprockets-es6'
 
+gem 'rails_12factor'
+
 gem 'puma'
 gem 'actioncable', github: 'rails/actioncable', ref: '6143352f8ffba303f0c7644be7573f6725554cb3'
 
