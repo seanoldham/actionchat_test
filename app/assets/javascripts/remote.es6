@@ -1,6 +1,6 @@
 var Remote = {};
 
-Remote.cable = Cable.createConsumer("wss://calm-tor-2780.herokuapp.com/");
+Remote.cable = Cable.createConsumer("wss://localhost:3000/");
 
 Remote.messaging = Remote.cable.subscriptions.create('MessagesChannel', {
   received: function(data) {
