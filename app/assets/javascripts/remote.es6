@@ -1,6 +1,6 @@
 var Remote = {};
 
-Remote.cable = Cable.createConsumer("<%= Rails.application.config.web_socket_server_url %>");
+Remote.cable = Cable.createConsumer("wss://calm-tor-2780.herokuapp.com/");
 
 Remote.messaging = Remote.cable.subscriptions.create('MessagesChannel', {
   received: function(data) {
