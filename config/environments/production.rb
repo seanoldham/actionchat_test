@@ -79,6 +79,6 @@ Rails.application.configure do
 
   config.middleware.use ChatActionCable
 
-  config.web_socket_server_url = "ws://hidden-badlands-5177.herokuapp.com/"
+  config.web_socket_server_url = "wss://calm-tor-2780.herokuapp.com/"
 
 end
