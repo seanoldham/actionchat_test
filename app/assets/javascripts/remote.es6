@@ -1,6 +1,6 @@
 var Remote = {};
 
-Remote.cable = Cable.createConsumer(`ws://${window.location.hostname}:28080`);
+Remote.cable = Cable.createConsumer("<%= Rails.application.config.web_socket_server_url %>");
 
 Remote.messaging = Remote.cable.subscriptions.create('MessagesChannel', {
   received: function(data) {
