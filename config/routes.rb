@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   delete '/sessions', to: 'sessions#destroy', as: :logout
 
   resources :messages, only: %i(index)
+  post '/messages', to: 'messages#index'
 end
